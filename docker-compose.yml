@@ -14,8 +14,8 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: Scotch430
-      MYSQL_USER:  tuvoz 
-      MYSQL_PASSWORD: $TuVozUniz@r2021$
+      MYSQL_USER:  tuvoz
+      MYSQL_PASSWORD: TuVozUniz
     expose:
         - "40000"
     ports:
