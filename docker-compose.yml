@@ -13,7 +13,7 @@ services:
     image: mariadb:10.6
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Scotch430
+      MYSQL_ROOT_PASSWORD: 123
       MYSQL_USER:  tuvoz
       MYSQL_PASSWORD: TuVozUniz
     expose:
@@ -34,6 +34,8 @@ services:
       - "8081:80"
     environment:
       - PMA_HOST=mariadb
-      - PMA_PORT=3306 
+      - PMA_PORT=3306
+      - UPLOAD_LIMIT=2048M
+      - MEMORY_LIMIT=512M 
     networks:
       db:
